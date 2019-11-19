@@ -14,14 +14,14 @@ import jp.kyamlab.fragmentbindingleaksample.databinding.FragmentFirstBinding
  */
 class FirstFragment : Fragment() {
 
-    private lateinit var binding: FragmentFirstBinding
+//    private lateinit var binding: FragmentFirstBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding =
-            DataBindingUtil.inflate(
+        val binding =
+            DataBindingUtil.inflate<FragmentFirstBinding>(
                 inflater,
                 R.layout.fragment_first,
                 container,
